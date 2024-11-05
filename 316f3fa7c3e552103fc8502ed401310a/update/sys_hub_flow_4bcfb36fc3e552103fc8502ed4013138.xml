@@ -16,7 +16,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>create_customer_order</internal_name>
-        <label_cache>[{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Incident Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"incident","column_name":"sys_id","usedInstances":{"ef1c3d1e-c93b-455f-bf6e-c85351f0aa93":["conditions"]}}]</label_cache>
+        <label_cache>[{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Incident Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"incident","column_name":"sys_id","usedInstances":{"ef1c3d1e-c93b-455f-bf6e-c85351f0aa93":["conditions"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{},"attributes":{}},{"name":"Created_1.current.location","label":"Trigger - Record Created➛Incident Record➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"incident","column_name":"location","usedInstances":{"fdf99af3-df0d-4a07-a11d-f86b9400a493":["firstname"]}}]</label_cache>
         <latest_snapshot/>
         <master_snapshot/>
         <name>Create Customer Order</name>
@@ -37,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4bcfb36fc3e552103fc8502ed4013138</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Create Customer Order</sys_name>
         <sys_overrides/>
         <sys_package display_value="Customer_Order" source="x_1521157_customer">316f3fa7c3e552103fc8502ed401310a</sys_package>
@@ -45,7 +45,7 @@
         <sys_scope display_value="Customer_Order">316f3fa7c3e552103fc8502ed401310a</sys_scope>
         <sys_update_name>sys_hub_flow_4bcfb36fc3e552103fc8502ed4013138</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-11-05 06:10:11</sys_updated_on>
+        <sys_updated_on>2024-11-05 06:28:38</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=4bcfb36fc3e552103fc8502ed4013138"/>
@@ -60,10 +60,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-11-05 05:51:06</sys_created_on>
         <sys_id>7030487fc3e552103fc8502ed401318c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-11-05 06:10:10</sys_updated_on>
+        <sys_updated_on>2024-11-05 06:28:37</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -311,7 +311,46 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ec30487fc3e552103fc8502ed4013186"/>
     <sys_hub_flow_output action="delete_multiple" query="model=4bcfb36fc3e552103fc8502ed4013138"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=4bcfb36fc3e552103fc8502ed4013138"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=4bcfb36fc3e552103fc8502ed4013138"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=4bcfb36fc3e552103fc8502ed4013138^sys_idNOT IN5ec8407bc32952103fc8502ed401316d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Action_New">9498c83bc32952103fc8502ed40131f2</action_type>
+        <action_type_parent display_value="Action_New">8da504f3c32952103fc8502ed401316e</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Create Customer Order">4bcfb36fc3e552103fc8502ed4013138</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-05 06:28:37</sys_created_on>
+        <sys_id>5ec8407bc32952103fc8502ed401316d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Customer_Order">316f3fa7c3e552103fc8502ed401310a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-05 06:28:38</sys_updated_on>
+        <ui_id>fdf99af3-df0d-4a07-a11d-f86b9400a493</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5ec8407bc32952103fc8502ed401316d"/>
+    <sys_element_mapping action="delete_multiple" query="id=5ec8407bc32952103fc8502ed401316d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>firstname</field>
+        <id>5ec8407bc32952103fc8502ed401316d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-05 06:28:38</sys_created_on>
+        <sys_id>9ac8407bc32952103fc8502ed401316f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-05 06:28:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9498c83bc32952103fc8502ed40131f2</table>
+        <value>{{Created_1.current.location}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5ec8407bc32952103fc8502ed401316d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5ec8407bc32952103fc8502ed401316d"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=4bcfb36fc3e552103fc8502ed4013138"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=4bcfb36fc3e552103fc8502ed4013138"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=4bcfb36fc3e552103fc8502ed4013138"/>
